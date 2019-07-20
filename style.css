@@ -1,0 +1,30 @@
+body {
+  background-color: #7289D9;
+	font-family: 'uni_sansheavy_caps';
+}
+
+@font-face {
+    font-family: 'uni_sansheavy_caps';
+    src: url('fonts/uni_sans_heavy-webfont.woff2') format('woff2'),
+         url('fonts/uni_sans_heavy-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p, a {
+  color: white
+}
+
+td {
+  width: 50%;
+  text-align: center;
+}
+
+img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center{
+  text-align: center;
+}
