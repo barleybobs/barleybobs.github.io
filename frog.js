@@ -51,6 +51,8 @@ imgBase.onload = function() {
 }
 
 canvas.addEventListener("click", function() {
-    var img = canvas.toDataURL("image/png").replace("image/png", "image/octet-stream");
-    window.location.href = img;
+    var link = document.getElementById('link');
+    link.setAttribute('download', 'Frog.png');
+    link.setAttribute('href', canvas.toDataURL("image/png").replace("image/png", "image/octet-stream"));
+    link.click();
 });
