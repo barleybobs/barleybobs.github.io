@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                height: 100vh;  
+                width: 100vw;
+
+                margin: 0;
+
+                background-color: black;
+            }
+            
+            canvas {
+                border: solid white;
+                border-width: 50px 50px 200px 50px;
+
+                animation: fadeIn 0.8s ease-out forwards;
+                animation-delay: 0.1s;
+
+                opacity: 0;
+            }
+
+            @media screen and (orientation:portrait) { 
+                canvas {
+                    border-width: 25px 25px 100px 25px;
+                }
+            }
+
+            @keyframes fadeIn {
+                0% {
+                    opacity: 0;
+                }
+
+                100% {
+                    opacity: 1;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <canvas id="canvas"></canvas>
+
+        <script type="text/javascript" src="./frog.js"></script>
+    </body>
+</html>
